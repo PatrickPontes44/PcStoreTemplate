@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/products.css">
+    <title>YourPC - Products</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <p class="logo">Your<span id="span-p">P</span><span id="span-c">C</span></p>
+            <ul>
+                <li><a href="./index.html" class="nav-link">Home</a></li>
+                <li><a href="./products.html" class="nav-link">Products</a></li>
+                <li><a href="./contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-icons">
+                <a href="./cart.html"><i class="material-icons cart">shopping_cart</i></a>
+                <a href="#"><i class="material-icons menu">menu</i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-card">
+            <div class="thumbnail">
+                <img src="./img/pc-1.png" alt="pc gamer">
+            </div>
+            <div class="product-info">
+                <h1>PC Gamer Storm</h1>
+                <h3>$500.00</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="buy-cart">
+                <button type="button" name="buy" class="buy">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="thumbnail">
+                <img src="./img/pc-2.png" alt="pc gamer">
+            </div>
+            <div class="product-info">
+                <h1>PC Gamer Destroyer</h1>
+                <h3>$800.00</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="buy-cart">
+                <button type="button" name="buy" class="buy">Comprar</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="thumbnail">
+                <img src="./img/pc-3.png" alt="pc gamer">
+            </div>
+            <div class="product-info">
+                <h1>PC Gamer Magma</h1>
+                <h3>$1500.00</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="buy-cart">
+                <button type="button" name="buy" class="buy">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="thumbnail">
+                <img src="./img/pc-1.png" alt="pc gamer">
+            </div>
+            <div class="product-info">
+                <h1>PC Gamer Storm</h1>
+                <h3>$500.00</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="buy-cart">
+                <button type="button" name="buy" class="unavailable" disabled>Indisponível</button>
+            </div>
+        </div>
+
+    </main>
+    <i class="material-icons dark-mode" onclick="darkMode()">nights_stay</i>
+
+    <script src="app.js"></script>
+</body>
+</html>

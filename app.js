@@ -30,15 +30,22 @@ function showSlides(n) {
 
 function darkMode(){
      let headerThree = document.querySelectorAll("h3");
+     let navLink = document.querySelectorAll(".nav-link");
      if(document.body.className == "darkBody"){
          document.body.classList.remove("darkBody");
          for(let i=0; i<headerThree.length; i++){
             headerThree[i].classList.remove("darkH3");
         }
+        for(let i=0; i<navLink.length; i++){
+          navLink[i].style.color = "black";
+        }
      }else{
         document.body.classList.add("darkBody");
         for(let i=0; i<headerThree.length; i++){
             headerThree[i].classList.add("darkH3");
+        }
+        for(let i=0; i<navLink.length; i++){
+          navLink[i].style.color = "white";
         }
      }
  }
