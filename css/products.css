@@ -96,6 +96,7 @@ main .product-card{
 
 main .product-card:hover{
     transform: scale(1.02);
+    cursor: pointer;
 }
 
 .product-card .thumbnail{
@@ -157,12 +158,27 @@ main .product-card:hover{
     cursor: not-allowed;
 }
 
+main footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+main footer .about a{
+    text-decoration: none;
+    margin: 2em;
+    font-size: 1.2em;
+    transition: color ease-in-out .4s;
+    color: black;
+    text-align: center;
 
-
-
-
-
-
+}
+main footer .about a:hover{
+    cursor: pointer;
+    color: rgb(197, 48, 48)!important;
+}
 
 
 .dark-mode{
@@ -183,7 +199,7 @@ main .product-card:hover{
 }
 
 
-@media only screen and (max-width: 980px){
+@media only screen and (max-width: 1300px){
     
     header{
         width: 100%;
@@ -195,6 +211,49 @@ main .product-card:hover{
         display: flex;
         align-items: center;
         justify-content: space-around;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    main .product-card{
+        width: 40%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 40% 10%; 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: rgba(119, 21, 21, 0.2);
+        margin: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: transform linear .1s;
+    }
+    main footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main footer .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main footer .about a{
+        text-decoration: none;
+        margin: 1em;
+        font-size: 1.2em;
+        transition: color ease-in-out .4s;
+        color: black;
+    
     }
     
 }
@@ -221,6 +280,59 @@ main .product-card:hover{
     }
     header nav .menu-icons a .menu{
         display: block;
+    }
+
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    main .product-card{
+        width: 90%;
+        height: 60%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 40% 10%; 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: rgba(119, 21, 21, 0.2);
+        margin: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: transform linear .1s;
+    }
+    .product-info h1{
+        font-size: 1.4em;
+    }
+    .product-info h3{
+        font-size: 1.2em;
+    }
+    main footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border-top: 2px solid rgb(197, 48, 48);
+        border-bottom: 3px solid rgb(197, 48, 48);
+        margin-top: 30px;
+    }
+    main footer .about{
+        display: block;
+    }
+    main footer .about a{
+        text-decoration: none;
+        margin: 2em;
+        font-size: 1.2em;
+        transition: color ease-in-out .4s;
+        color: black;
+        display: block;
+        text-align: center;
+    
     }
     
 }
